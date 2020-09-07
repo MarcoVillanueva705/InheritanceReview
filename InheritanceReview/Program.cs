@@ -83,7 +83,7 @@ namespace LearningCollections
         //'protected' accessors allows other classes to inherit
         //properties from a class
         //works like 'private', but it works with inheritance where
-        //private does not
+        //private does not; private allows access only within class
         protected int Phone;
     }
 
@@ -93,10 +93,8 @@ namespace LearningCollections
         //Count will not rely on each specific Student
         public static int Count;
 
-        public string Name;
         public int Grade;
         public string Birthday;
-        public string Address;
         //encapsulation
         //accessability of specifier
         //common practice to use first letter of variable name 
