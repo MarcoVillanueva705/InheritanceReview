@@ -80,10 +80,14 @@ namespace LearningCollections
         //and Teacher share to avoid duplicate code
         public string Name;
         public string Address;
-        private int Phone;
+        //'protected' accessors allows other classes to inherit
+        //properties from a class
+        //works like 'private', but it works with inheritance where
+        //private does not
+        protected int Phone;
     }
 
-    class Student
+    class Student : Member
     {
         //Count will be independent of instantiated Student
         //Count will not rely on each specific Student
