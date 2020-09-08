@@ -143,7 +143,7 @@ namespace LearningCollections
 
     }
 
-    class Teacher
+    class Teacher : Member
     {
 
     }
