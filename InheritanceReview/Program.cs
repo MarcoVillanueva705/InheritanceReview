@@ -145,6 +145,6 @@ namespace LearningCollections
 
     class Teacher : Member
     {
-
+    //placeholder for shared properties
     }
 }
