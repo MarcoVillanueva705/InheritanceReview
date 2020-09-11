@@ -84,7 +84,16 @@ namespace LearningCollections
         //properties from a class
         //works like 'private', but it works with inheritance where
         //private does not; private allows access only within class
-        protected int Phone;
+        protected int phone;
+        public int Phone
+        {
+            //use a standard '=' to assign the phone number
+            //like we would for a variable
+            
+                //since it's now in Member class, we can remove
+            //it from Student class
+            set { phone = value; Console.WriteLine(phone); }
+        }
     }
 
     //Student will inherit from Member
@@ -126,30 +135,26 @@ namespace LearningCollections
             //Console.Write("constructor");
         }
 
-        private int phone;
+        //no longer needed; see Member class
+        //private int phone;
 
-        public void SetPhone(int number)
-        {
-            phone = number;
-        }
+        //public void SetPhone(int number)
+        //{
+        //    phone = number;
+        //}
         //C# property
         //instead of passing paramter through method
         //setter can be used to declare value of phone
-        public int Phone
-        {
-            //use a standard '=' to assign the phone number
-            //like we would for a variable
-            set { phone = value; Console.WriteLine(phone); }
-        }
 
     }
 
     class Teacher : Member
     {
         //placeholder for shared properties
-        public string Name;
-        public string Address;
-        public int Phone;
+
+        //public string Name;
+        //public string Address;
+        //public int Phone;
         public string Subject;
     }
 }
