@@ -87,6 +87,7 @@ namespace LearningCollections
         protected int Phone;
     }
 
+    //Student will inherit from Member
     class Student : Member
     {
         //Count will be independent of instantiated Student
@@ -145,6 +146,10 @@ namespace LearningCollections
 
     class Teacher : Member
     {
-    //placeholder for shared properties
+        //placeholder for shared properties
+        public string Name;
+        public string Address;
+        public int Phone;
+        public string Subject;
     }
 }
