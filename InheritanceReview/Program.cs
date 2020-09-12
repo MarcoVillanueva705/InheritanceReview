@@ -87,7 +87,7 @@ namespace LearningCollections
        
         //to prevent access to all of the student phone numbers
         //the Phone number property can no longer be accessible after
-        //it's set
+        //it's set; see 'newStudent.Phone' inside the Program class
         protected int phone;
         public int Phone
         {
