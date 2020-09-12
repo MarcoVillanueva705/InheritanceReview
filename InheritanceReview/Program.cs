@@ -84,7 +84,10 @@ namespace LearningCollections
         //properties from a class
         //works like 'private', but it works with inheritance where
         //private does not; private allows access only within class
-        //review tomorrow
+       
+        //to prevent access to all of the student phone numbers
+        //the Phone number property can no longer be accessible after
+        //it's set
         protected int phone;
         public int Phone
         {
